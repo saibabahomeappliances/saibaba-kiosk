@@ -10,7 +10,6 @@ const CategoryManager = () => {
     const fileInputRef = useRef(null);
 
     useEffect(() => {
-        let isMounted = true;
         
         fetchCategories();
         
@@ -21,7 +20,7 @@ const CategoryManager = () => {
             .subscribe();
 
         return () => {
-            isMounted = false;
+
             supabase.removeChannel(channel);
         }
     }, []);

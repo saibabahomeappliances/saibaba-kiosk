@@ -6,7 +6,7 @@ import { supabase } from '../supabaseClient';
 const ProductList = ({ category, onSelectProduct }) => {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+    const [error] = useState(null);
 
     useEffect(() => {
         let isMounted = true;

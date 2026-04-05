@@ -1,17 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Phone, MapPin, ChevronRight, Clock } from 'lucide-react';
+import { Menu, X, Phone, ChevronRight } from 'lucide-react';
 import { storeInfo } from '../data/storeData';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const [scrolled, setScrolled] = useState(false);
-
     useEffect(() => {
-        const handleScroll = () => {
-            setScrolled(window.scrollY > 20);
-        };
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
+        // Scroll listener was here but unused.
     }, []);
 
     return (

@@ -1,5 +1,4 @@
 import React from 'react';
-import { storeInfo } from '../data/storeData';
 
 const TrustBar = () => {
     return (

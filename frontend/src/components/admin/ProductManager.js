@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Plus, Edit, Trash2, X, Save, Image as ImageIcon, UploadCloud } from 'lucide-react';
+import { Plus, Edit, Trash2, X, Save, UploadCloud } from 'lucide-react';
 import { supabase } from '../../supabaseClient';
 
 const ProductManager = () => {
@@ -22,7 +22,6 @@ const ProductManager = () => {
     });
 
     useEffect(() => {
-        let isMounted = true;
         
         fetchCategories();
         fetchProducts();
@@ -34,7 +33,7 @@ const ProductManager = () => {
             .subscribe();
 
         return () => {
-            isMounted = false;
+
             supabase.removeChannel(channel);
         }
     }, []);
