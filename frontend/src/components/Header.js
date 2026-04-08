@@ -16,7 +16,7 @@ const Header = () => {
                     {/* Logo Area */}
                     <div className="flex flex-col">
                         <div className="text-xl font-bold font-heading text-white tracking-widest flex items-center gap-2">
-                            <span>SAI BABA</span>
+                            <span>SAI BABA HOME APPLIANCES</span>
                         </div>
                         <div className="flex items-center gap-2 text-[10px] sm:text-xs font-bold tracking-[0.2em] text-brand-teal mt-0.5">
                             <span>APPLIANCES</span>
